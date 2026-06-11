@@ -1,0 +1,46 @@
+name: Chamado de Suporte
+description: Registrar um chamado recebido pelo suporte
+labels: ["suporte"]
+body:
+  - type: input
+    id: cliente
+    attributes:
+      label: Cliente
+      placeholder: Nome da empresa
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Dúvida
+        - Bug
+        - Feature
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Normal
+        - Alta
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do chamado
+      description: O que o usuário relatou, com o máximo de contexto possível
+    validations:
+      required: true
+
+  - type: textarea
+    id: resolucao
+    attributes:
+      label: Resolução
+      description: Como foi resolvido (preencher ao fechar)
