@@ -76,7 +76,7 @@ Cards superiores
 */
 
 const resolvidos = issues.filter(
-    issue => issue.state === "Finalizadas"
+    issue => issue.state === "Closed"
 ).length;
 
 /*
