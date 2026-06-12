@@ -1,53 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Suporte</title>
-
-```
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<link rel="stylesheet" href="style.css">
-```
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
 
-```
-<h1>Dashboard de Suporte</h1>
+    <h1>Dashboard de Suporte</h1>
 
-<div class="cards">
+    <div id="aviso" class="aviso" hidden></div>
 
-    <div class="card">
-        <h3>Atendimentos Realizados</h3>
-        <span id="totalResolvidos">0</span>
+    <div id="cards" class="cards"></div>
+
+    <div class="grafico-container">
+        <canvas id="issuesPorDia"></canvas>
     </div>
 
-    <div class="card">
-        <h3>Issues Abertas</h3>
-        <span id="totalAbertas">0</span>
-    </div>
+    <div id="quadros"></div>
 
-    <div class="card">
-        <h3>Em Andamento</h3>
-        <span id="totalAndamento">0</span>
-    </div>
-
-    <div class="card">
-        <h3>Aguardando Cliente</h3>
-        <span id="totalAguardando">0</span>
-    </div>
-
-</div>
-
-<div class="grafico-container">
-    <canvas id="issuesPorDia"></canvas>
-</div>
-```
+    <p id="atualizadoEm" class="rodape"></p>
 
 </div>
 
