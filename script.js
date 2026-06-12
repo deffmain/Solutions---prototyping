@@ -6,7 +6,7 @@ ALTERE APENAS ESTES CAMPOS
 */
 
 const GITHUB_OWNER = "deffmain";
-const GITHUB_REPO = "Solution---prototyping";
+const GITHUB_REPO = "Solutions---prototyping";
 
 /*
 Se o repositório for privado:
