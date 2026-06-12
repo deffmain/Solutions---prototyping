@@ -91,7 +91,7 @@ exemplos abaixo.
 */
 
 const abertas = issues.filter(
-    issue => issue.state === "open"
+    issue => issue.state === "Abertos"
 ).length;
 
 /*
